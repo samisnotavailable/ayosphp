@@ -30,4 +30,14 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+
+    'firebase' => [
+        'credentials' => [
+            'file' => storage_path('firebase-credentials.json'),
+        ],
+        'project_id' => env('FIREBASE_PROJECT_ID', 'ayos-app-25ebb'),
+        // Other configuration options...
+    ],
+
+
 ];
